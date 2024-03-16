@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    color: black;
+    background-color:white;
+}
+
+/*navbar*/
+
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 20px 10%;
+    top: 0;
+    left: 0;
+    background: #252525;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600px;
+    cursor: default;
+    letter-spacing: 4px;
+    opacity: 1;
+}
+
+
+.navbar a {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500px;
+    margin-left: 35px;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.navbar a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+.home {
+    background:url('bg.jpg'); 
+    background-blend-mode: overlay; 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px 10% 0;
+}
+
+.home-content {
+    max-width: 600px;
+}
+.home-content h1 {
+    font-size: 56px;
+    margin: -3px 0; 
+    padding-top: 10px;
+    font-weight: 700px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    opacity: 1;
+}
+
+.home-content h3 {
+    padding-top: 10px;
+    font-size: 32px;
+    font-weight: 700px;
+    opacity: 1;
+}
+.home-in a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid blueviolet;
+    border-radius: 50%;
+    font-size: 20px;
+    color: blueviolet;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    opacity: 1;
+}
+
+.home-in a:hover {
+    background: blueviolet;
+    color: gray;
+    box-shadow: 0 0 20px blueviolet;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+ }
+
+ div p{
+    display: inline;
+    padding:0px 85px 0px 80px;
+      
+ } 
+ h2{
+    text-align: center;
+    font-size: 30px;
+ }
+
+.card:hover{
+    box-shadow: 2px 2px 10px black;
+}
+
+.card{
+    display: inline-block;
+}
+/* contact */
+.contacts {
+    align-items: center;
+    gap: 3rem;
+    padding: 40px;
+    padding-top: 70px;
+    justify-content: center;
+}
+
+.contact-text {
+    align-content: center;
+}
+
+.contact-text h2 {
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.contact-list i {
+    display: inline-block;
+    color: blueviolet;
+    font-size: 20px;
+    font-weight: 600px;
+    transition: all .40s ease;
+    padding: 10px;
+}
+
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid blueviolet;
+    color: blueviolet;
+    border-radius: 50%;
+    font-size: 20px;
+    background: transparent;
+    text-decoration: none;
+    margin: 0px 15px 0px 0;
+    opacity: 1;
+}
+
+.contact-icons i:hover {
+    background: blueviolet;
+    color: #000;
+    box-shadow: 0 0 20px blueviolet
+}
+
+/*footer */
+
+footer p {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: white;
+    font-weight: 300px;
+    margin-top: 0px;
+}
+
+@media (max-width: 400px) {
+    * {
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .logo {
+        position: relative;
+        font-size: 20px;
+        font-weight: 500px;
+        text-align: center;
+    }
+
+    .logo::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    .navbar a {
+        font-size: 13px;
+        font-weight: 200px;
+        margin-left: 0px;
+        padding: 10px 4px 0 0;
+    }
+
+    .navbar a::after {
+        content: "\a";
+        white-space: pre;
+    }
+
+    /*home*/
+    .home {
+        width: 100%;
+        align-items: normal;
+        padding-top: 40%;
+        padding-bottom: 0;
+    }
+
+    .home-content h1 {
+        font-size: 30px;
+        font-weight: 600px;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+        font-weight: 300px;
+    }
+
+    /*contact*/
+    .contacts h2 {
+    font-size: 50px;
+    }
+
+    .contact-list i {
+    font-size: 13px;
+    padding: 5px 5px 0 0;
+    }
+}
